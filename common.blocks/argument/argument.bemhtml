@@ -1,0 +1,7 @@
+block('argument').content()(function() {
+
+	return [
+		{ elem: 'title', content: this.ctx.title },
+		{ elem: 'text', content: this.ctx.content }
+	]
+});

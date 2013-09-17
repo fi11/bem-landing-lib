@@ -1,0 +1,1 @@
+block('inline-hero').elem('text').tag()('p');

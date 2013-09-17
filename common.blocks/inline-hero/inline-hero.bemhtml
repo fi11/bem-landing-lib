@@ -1,0 +1,12 @@
+block('inline-hero').content()(function() {
+
+	return [
+		{
+			block: 'line',
+			content: [
+				{ block: 'inline-hero', elem: 'title', content: this.ctx.title },
+				{ block: 'inline-hero', elem: 'text', content: this.ctx.text }
+			]
+		}
+	]
+});

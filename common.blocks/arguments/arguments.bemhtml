@@ -1,0 +1,19 @@
+block('arguments').content()(function() {
+
+	return {
+		block: 'line', content: [
+			{
+				block: 'row',
+				mods: { cols: this.mods.cols || {} },
+				content: this.ctx.content.map(function(item) {
+					return {
+						elem: 'item',
+						elemMods: { size: '1-3' },
+						mix: { block: 'arguments', elem: 'item' },
+						content: { block: 'argument', title: item.title || '', content: item.content || '' }
+					}
+				})
+			}
+		]
+	}
+});

@@ -1,0 +1,1 @@
+block('inline-hero').elem('title').tag()('h1');
